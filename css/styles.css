@@ -161,5 +161,16 @@
         background: #FFFFFF 0% 0% no-repeat padding-box;
         /*margin: 10px;*/
        border-radius: 10px;
-        opacity: 1
+       border:0px;
+       padding:10px;
+      
+    }
+    .das-plus{
+    text-align: center;
+    font: Regular 17px/22px Source Sans Pro;
+    letter-spacing: 0;
+    color: #4670A6;
+    background: #F2F5FF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
     }
