@@ -96,7 +96,70 @@
         opacity: 1;
     }
     hr{
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
       opacity: 0.3;
 
+    }
+    .right_nav_header{
+        display: inline !important; 
+        float: left; 
+    }
+    .right_nav_ul{
+        display: flex; 
+        justify-content:space-around;
+        list-style-type:none;
+    }
+    .right_nav_wrapper{
+        margin-top: 63px;
+    }
+    .nav-item{
+        margin-left: 15px;
+        margin-left: 15px;
+    }
+    .welcome{
+        text-align: left;
+        font: Regular 30px/43px Solomon Sans Book;
+        letter-spacing: 0;
+        color: #4D4F5C;
+        opacity: 1;
+    }
+    .help{
+        font: Regular 15px/21px Solomon Sans SemiBold;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+        background: transparent linear-gradient(91deg, #4EA7D0 0%, #425390 100%) 0% 0% no-repeat padding-box;
+        border-radius: 40px;
+        opacity: 1;
+    }
+    .content{
+        margin:20px 20px 0 0px;
+        border-bottom: 1px solid #0000001A ;
+
+    }
+    .hrs{
+        border: 1px solid #ffffff;
+        margin-top: 10px;
+    }
+    .nav-tab{
+        border-bottom: 1px solid #0000001A ;
+        text-align: left;
+        font: Regular 22px/31px Solomon Sans Light;
+        letter-spacing: 0;
+        color: #4D4F5C;
+        opacity: 1;
+    }
+    .tab-active{
+        text-align: left;
+        font: Regular 22px/31px Solomon Sans normal;
+        border-bottom: 2px solid #FF896A;
+        letter-spacing: 0;
+        color: #4D4F5C;
+        opacity: 1;
+    }
+    .col-content{
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        /*margin: 10px;*/
+       border-radius: 10px;
+        opacity: 1
     }
