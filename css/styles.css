@@ -10,6 +10,7 @@
         #4EA7D0, #425390
         );
         height: 100vh;
+        position: relative;
         
     }
     .dashboard-contet{
@@ -174,3 +175,9 @@
     border-radius: 16px;
     opacity: 1;
     }
+
+    .log-out{
+     position: absolute;
+     bottom: 0;   
+    }
+   
