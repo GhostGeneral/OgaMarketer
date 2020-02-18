@@ -180,4 +180,8 @@
      position: absolute;
      bottom: 0;   
     }
-   
+   .box-contact{
+    background: #F2F5FF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    color: #425390;
+   }
