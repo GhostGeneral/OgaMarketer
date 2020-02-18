@@ -17,6 +17,10 @@
 <style>
     html,body {
   height: 100%;
+  font: Regular 14px/21px Solomon Sans Normal;
+letter-spacing: 0;
+color: #A4AFB7;
+
 }
 
 .container-fluid{
@@ -39,6 +43,85 @@ background-size: cover;
 background-repeat: no-repeat;
 
 }
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font: Regular 30px/43px Solomon Sans Normal;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+.centered-form{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.one-side{
+    opacity:0.2;
+    text-align: center;
+        display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+
+}
+.pagination>li>a { 
+    border-radius: 60% !important;
+    margin: 0 5px;
+    background: #FF896A 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.form-control{
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #F2F5FF; ;
+}
+.info{
+
+font: Regular 14px/21px Solomon Sans Normal;
+letter-spacing: 0;
+color: #A4AFB7;
+font-size: small;
+opacity: 1;
+}
+.btn-send{
+    background: transparent linear-gradient(90deg, #4EA7D0 0%, #425390 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 8px #4253906A;
+border-radius: 40px;
+}
+
+.btn-back{
+background: #F2F5FF 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 5px #42539038;
+border-radius: 40px;
+text-align: center;
+font: Regular 16px/22px Solomon Sans SemiBold;
+letter-spacing: 0;
+color: #4670A6;
+}
+.img-logo{
+    width: 85px;height: 101px
+}
+hr{
+        border: 1px solid #ffffff;
+      opacity: 0.3;
+
+    }
 </style>
   </head>
   <body>
@@ -46,11 +129,79 @@ background-repeat: no-repeat;
       <div class="container-fluid h-100">
         <div class="row justify-content-center h-100">
             <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8" id="cover">
+            
+               <div class="col-lg-12">
+                    <img src="img/logo.svg" alt="Avatar" class="image h-75 w-75 p-5 one-side
+                    "  >
+                    
+                    <div class="top-left mt-2"><img src="img/logo-final.svg"  alt="Avatar" ></div>
+                    
+                    <div class="bottom-right"> <ul class="pagination">
+                       
+                        <li class="page-item"><a class="page-link" href="#"></a></li>
+                        <li class="page-item "><a class="page-link" href="#"></a></li>
+                        <li class="page-item "><a class="page-link" href="#"></a></li>
+                        <li class="page-item "><a class="page-link" href="#"></a></li>
+                      
+                      </ul></div>
+                    <div class="centered">Let’s get you all set up. Tell us a bit about yourself.</div>
+                </div>
                 
               </div>
           <div class="col-4 hidden-md-down" id="white">
         
-            Form Goes Here
+            
+         
+                <p class="h4 text-center mb-4 mt-4"><img src="img/logo-2.svg" class="img-logo" alt="Avatar" ><br/>
+                <span class="text-center" style="color: #2F5991;"><b>Oga</b>marketer</span>
+                </p>
+                <form class="justify-content-center p-4 ">
+                  
+                 
+                  <div class="form-group">
+                    <label for="pwd" class="small">First Name*</label>
+                    <input type="text" class="form-control" placeholder="Timothy">
+                  </div>
+                  
+                  <div class="form-group ">
+                    <label for="pwd" class="small">Last Name*</label>
+                    <input type="text" class="form-control" placeholder="Adams">
+                    
+                  </div>
+                  <div class="form-group ">
+                    <label for="pwd" class="small">Email*</label>
+                    <input type="email" class="form-control" placeholder="timothy.adams@email.com">
+                    <label for="pwd" class="small float-right">Use as default Email Sender ID <input type="checkbox"></label>
+                    
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd" class="small">Phone Number</label>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">+234</span>
+                      <input type="text" class="form-control" placeholder="080 1234 5678">
+                    </div>
+                    
+                  </div>
+                  <div class="form-group ">
+                    <label for="pwd" class="small">Password*</label>
+                    <input type="password" class="form-control" placeholder="***********">
+                  
+                    
+                  </div>
+                 
+                 
+              
+               
+                
+                
+             </form> 
+             <div class="text-center mt-4">
+              <button class="btn btn-primary btn-back p-1" type="button" > Back </button>
+
+           <button class="btn btn-primary btn-send" type="button" > Next
+
+           </button>
+           <p class="mt-4">Already have an account with us? <a>Log in</a></p>
           </div>
         
         </div>
