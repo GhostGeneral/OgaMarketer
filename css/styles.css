@@ -10,7 +10,13 @@
         #4EA7D0, #425390
         );
         height: 100vh;
-        position: relative;
+        width: 260px; /* Set the width of the sidebar */
+        position: fixed;
+        top: 0; /* Stay at the top */
+        left: 0;
+        overflow-x: hidden; /* Disable horizontal scroll */
+       
+       
         
     }
     .dashboard-contet{
@@ -139,8 +145,8 @@
 
     }
     .hrs{
-        border: 1px solid #ffffff;
-        margin-top: 10px;
+        border: 0.8px solid #ffffff;
+      opacity: 0.3;
     }
     .nav-tab{
         border-bottom: 1px solid #0000001A ;
@@ -185,3 +191,48 @@
     border-radius: 10px;
     color: #425390;
    }
+
+
+
+   .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        to bottom, 
+        #4EA7D0, #425390
+        );
+    overflow-x: hidden;
+
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  /* Style the active class (and buttons on mouse-over) */
+.active{
+    background-color: #666;
+    color: white;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
